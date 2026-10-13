@@ -1,16 +1,26 @@
-import logo from './logo.svg';
+import { useState, useEffect } from 'react'
 import './App.css';
 import {ContentMD} from './pageContent.js'
-
+const LANGUAGES = ['en', 'ger']
 function App() {
+  const [language, setLanguage] = useState(LANGUAGES[0])
+  
+  function changeLanguage() { 
+    if(language === LANGUAGES[0]) {
+      setLanguage(LANGUAGES[1])
+    } else {
+      setLanguage(LANGUAGES[0])
+    }
+  }
+
+  console.log(language)
+
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <ContentMD />
+        <p>{language}</p>
+        <button onClick={changeLanguage}>Language</button>
+        <ContentMD language={language} />
       </header>
     </div>
   );
