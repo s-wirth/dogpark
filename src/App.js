@@ -1,27 +1,35 @@
 import { useState } from 'react'
 import './App.css';
-import {ContentMD} from './pageContent.js'
+import { ContentMD } from './pageContent.js'
+import { siteContent } from './content.js'
+
 const LANGUAGES = ['en', 'ger']
+
 function App() {
   const [language, setLanguage] = useState(LANGUAGES[0])
+  const [navLinks, setNavLinks] = useState([])
   
   function changeLanguage() { 
-    if(language === LANGUAGES[0]) {
-      setLanguage(LANGUAGES[1])
-    } else {
-      setLanguage(LANGUAGES[0])
-    }
+    setLanguage(prev => prev === LANGUAGES[0] ? LANGUAGES[1] : LANGUAGES[0])
   }
-
-  console.log(language)
 
   return (
     <div className="App">
-        <nav>
-          <button onClick={changeLanguage}>Language</button>
+        <nav >
+          <button onClick={changeLanguage}>
+            {language === 'en' ? siteContent.nav.ger : siteContent.nav.en}
+          </button>
+          <ul style={{ display: 'flex', gap: '1rem', listStyle: 'none', padding: 0 }}>
+            {navLinks.map(link => (
+              <li key={link.id}>
+                <a href={`#${link.id}`}>{link.title}</a>
+              </li>
+            ))}
+          </ul>
         </nav>
-        <div className="content">
-          <ContentMD language={language} />
+        
+        <div className="content" style={{ marginTop: '5rem', padding: '2rem' }}>
+          <ContentMD language={language} onSectionsLoaded={setNavLinks} />
         </div>
     </div>
   );
