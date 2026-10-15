@@ -3,7 +3,6 @@
 > **"Es ist schön hier... aber es könnte schöner sein. Willst du helfen?"**
 > *Die Stadt hat mit Budgeteinschränkungen zu kämpfen und kann unserer Hundewiese nicht die Aufmerksamkeit schenken, die sie verdient. Wir sind sowieso jeden Tag hier – warum nehmen wir die Verbesserung also nicht selbst in die Hand?*
 
----
 
 ## Die Ausgangslage
 
@@ -11,7 +10,6 @@ Wir haben eine wunderbare, große Hundewiese im **Anton-Saefkow-Park**. Aufgrund
 
 Unser Ziel ist es nicht, die Fläche zu verändern, sondern sie **besser zu nutzen**.
 
----
 
 ## Herausforderungen und Unsere Lösungen
 
@@ -35,15 +33,12 @@ Unser Ziel ist es nicht, die Fläche zu verändern, sondern sie **besser zu nutz
   * **Bepflanzung:** Unkraut und Brennnesseln werden verdrängt, indem wir an ihrer Stelle die robusten, dauerhaften und hundefreundlichen Pflanzen einsetzen, die auch zur Hangsicherung dienen.
   * **Wasser:** Wir nutzen das Gefälle zu unserem Vorteil. Oben auf dem Hügel können wir Mulden ausheben, die Regenwasser auffangen und als abkühlende Pfützen dienen. Zudem installieren wir ein einfaches, oberirdisches Zisternen- oder Regenauffangsystem für trinkbares Wasser.
 
----
 
 ## Nächste Schritte und Projektphasen
 
 Ich bin nur ein sehr engagierter Nachbar. Ich plane und organisiere gerne, aber **ich kann eine Hundewiese nicht allein renovieren.** Dies ist ein echtes Gemeinschaftsprojekt.
 
-```
 [Phase 1: Du bist hier!] -> [Phase 2: Bedingungen und Logistik] -> [Phase 3: Umsetzung]
-```
 
 ### Phase 1: Gemeinschaft und Austausch (Aktuelle Phase)
 * Handzettel aufhängen und interessierte Nachbarn zusammenbringen.
@@ -53,7 +48,6 @@ Ich bin nur ein sehr engagierter Nachbar. Ich plane und organisiere gerne, aber 
 * Ausarbeiten des genauen Gestaltungsplans basierend auf dem Feedback der Gemeinschaft.
 * Rollen verteilen und die uns zur Verfügung stehenden Ressourcen erfassen.
 
----
 
 ## Was wir brauchen (Unsere Ressourcen)
 
@@ -66,7 +60,6 @@ Um dieses Projekt umzusetzen, benötigen wir die Unterstützung der Nachbarschaf
 | **Energie** | Eine Person braucht dafür ein Jahr; zwölf Personen schaffen es in einem Monat. Jede Stunde Hilfe zählt! |
 | **Geld** | Hauptsächlich für die Miete von Werkzeugen und den Druck von Flyern. Wir planen einen Nachbarschafts-Flohmarkt und eine Spendenaktion, um die Kosten zu decken. |
 
----
 
 ## Bereit, die Wiese schöner zu machen?
 

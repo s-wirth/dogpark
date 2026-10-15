@@ -16,9 +16,5 @@ export const ContentMD = ({language}) => {
     fetch(renderContent[language]).then(res => res.text()).then(text => setDisplayText(text))
   }, [language])
 
-  console.log('content file')
-  console.log(language)
-  console.log(renderContent[language])
-  console.log(renderContent.language)
   return <div><Markdown>{displayText}</Markdown></div>
 }

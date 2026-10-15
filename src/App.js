@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react'
+import { useState } from 'react'
 import './App.css';
 import {ContentMD} from './pageContent.js'
 const LANGUAGES = ['en', 'ger']
@@ -17,11 +17,12 @@ function App() {
 
   return (
     <div className="App">
-      <header className="App-header">
-        <p>{language}</p>
-        <button onClick={changeLanguage}>Language</button>
-        <ContentMD language={language} />
-      </header>
+        <nav>
+          <button onClick={changeLanguage}>Language</button>
+        </nav>
+        <div className="content">
+          <ContentMD language={language} />
+        </div>
     </div>
   );
 }

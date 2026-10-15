@@ -3,7 +3,6 @@
 > **"It's nice here... but it could be nicer. Wanna help?"**
 > *The city is facing budget restraints and can't give our dog park the love it deserves. We are here every day anyway—so why don't we just improve it ourselves?*
 
----
 
 ## The Situation
 
@@ -11,7 +10,6 @@ We have a lovely, large dog park in **Anton-Saefkow-Park**. However, due to its 
 
 Our goal isn't to change the area, but to **use it better**.
 
----
 
 ## Challenges and Our Solutions
 
@@ -35,15 +33,12 @@ Our goal isn't to change the area, but to **use it better**.
   * **Vegetation:** Replace weeds and nettles with hardy, permanent, dog-friendly plants used for slope fortification.
   * **Water:** Use the slope to our advantage. We can dig basins at the top to retain cooling puddles and install a simple overground cistern or rain-catchment system for dog-potable water.
 
----
 
 ## Next Steps and Project Phases
 
 I am just one highly engaged neighbor. I love planning and organizing, but **I cannot renovate a dog park alone.** This is a true community project.
 
-```
 [Phase 1: You Are Here!] -> [Phase 2: Conditions and Logistics] -> [Phase 3: Execution]
-```
 
 ### Phase 1: Community and Input (Current Phase)
 * Hanging flyers and gathering interested neighbors.
@@ -53,7 +48,6 @@ I am just one highly engaged neighbor. I love planning and organizing, but **I c
 * Finalizing the structural layout based on community feedback.
 * Assigning roles and mapping out our available resources.
 
----
 
 ## What We Need (Our Resources)
 
@@ -66,7 +60,6 @@ To pull this off, we need a mix of community assets:
 | **Energy** | 1 person can do this in a year; 12 people can do this in a month. Every hour of help counts! |
 | **Money** | Needed mainly for tool rentals and flyer printing. We plan to hold a neighborhood garage sale or donation drive to fund this. |
 
----
 
 ## Ready to Make It Nicer?
 
