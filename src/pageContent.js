@@ -5,16 +5,14 @@ import { siteContent } from './content.js';
 export const ContentMD = ({ language, onSectionsLoaded }) => {
   const [activeModalImg, setActiveModalImg] = useState(null);
 
-useEffect(() => {
+  useEffect(() => {
     const navItems = siteContent.sections.map(section => ({
       id: section.id,
-      // Prefer navTitle, fall back to main title
       title: section.navTitle?.[language] || section.title[language]
     }));
     onSectionsLoaded(navItems);
   }, [language, onSectionsLoaded]);
 
-  // Close modal when pressing Escape
   useEffect(() => {
     const handleKeyDown = (e) => {
       if (e.key === 'Escape') setActiveModalImg(null);
@@ -25,56 +23,70 @@ useEffect(() => {
 
   return (
     <div className="content-container">
-      {siteContent.sections.map(section => (
-        <section key={section.id} id={section.id}>
-          <h2>{section.title[language]}</h2>
-          {section.content && section.content[language] && (
-            <Markdown>{section.content[language]}</Markdown>
-          )}
+      {siteContent.sections.map(section => {
+        const isHero = section.type === 'hero';
 
-          {/* Render array of images (Photo Grid) */}
-          {Array.isArray(section.media) && (
-            <div className="photo-grid">
-              {section.media.map((item, idx) => (
-                <button
-                  type="button"
-                  key={idx}
-                  className="photo-thumb-btn"
-                  onClick={() => setActiveModalImg(item)}
-                >
+        return (
+          <section
+            key={section.id}
+            id={section.id}
+            className={isHero ? 'hero-section' : ''}
+          >
+            {isHero ? (
+              <h1 className="hero-title">{section.title[language]}</h1>
+            ) : (
+              <h2>{section.title[language]}</h2>
+            )}
+
+            {section.content && section.content[language] && (
+              <div className={isHero ? 'hero-content' : ''}>
+                <Markdown>{section.content[language]}</Markdown>
+              </div>
+            )}
+
+            {/* Photo Grid */}
+            {Array.isArray(section.media) && (
+              <div className="photo-grid">
+                {section.media.map((item, idx) => (
+                  <button
+                    type="button"
+                    key={idx}
+                    className="photo-thumb-btn"
+                    onClick={() => setActiveModalImg(item)}
+                  >
+                    <img
+                      src={item.src}
+                      alt={item.alt[language]}
+                      loading="lazy"
+                    />
+                  </button>
+                ))}
+              </div>
+            )}
+
+            {/* Standalone Media */}
+            {section.media && !Array.isArray(section.media) && (
+              <div className="media-wrapper">
+                {section.media.type === 'image' && (
                   <img
-                    src={item.src}
-                    alt={item.alt[language]}
-                    loading="lazy"
+                    src={section.media.src}
+                    alt={section.media.alt[language]}
+                    onClick={() => setActiveModalImg(section.media)}
                   />
-                </button>
-              ))}
-            </div>
-          )}
+                )}
+                {section.media.type === 'video' && (
+                  <video controls width="100%">
+                    <source src={section.media.src} type="video/mp4" />
+                    Your browser does not support the video tag.
+                  </video>
+                )}
+              </div>
+            )}
+          </section>
+        );
+      })}
 
-          {/* Render single legacy media object if needed */}
-          {section.media && !Array.isArray(section.media) && (
-            <div className="media-wrapper">
-              {section.media.type === 'image' && (
-                <img
-                  src={section.media.src}
-                  alt={section.media.alt[language]}
-                  onClick={() => setActiveModalImg(section.media)}
-                  className="clickable-single-image"
-                />
-              )}
-              {section.media.type === 'video' && (
-                <video controls width="100%">
-                  <source src={section.media.src} type="video/mp4" />
-                  Your browser does not support the video tag.
-                </video>
-              )}
-            </div>
-          )}
-        </section>
-      ))}
-
-      {/* Lightbox / Modal */}
+      {/* Modal */}
       {activeModalImg && (
         <div className="modal-backdrop" onClick={() => setActiveModalImg(null)}>
           <div className="modal-content" onClick={(e) => e.stopPropagation()}>

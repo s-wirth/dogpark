@@ -118,7 +118,7 @@ section {
   padding: 2rem;
   box-shadow: var(--shadow-sm);
   transition: box-shadow 0.2s ease;
-  scroll-margin-top: 5rem; /* Prevents sticky header from covering titles on click */
+  scroll-margin-top: 2rem; /* Prevents sticky header from covering titles on click */
 }
 
 section:hover {
@@ -166,6 +166,43 @@ section a {
 
 section a:hover {
   color: var(--accent-hover);
+}
+
+/* --- Hero Section Styling --- */
+.hero-section {
+  background: linear-gradient(180deg, #ffffff 0%, var(--accent-light) 100%);
+  border: 1px solid rgba(46, 125, 50, 0.25);
+  padding: 3rem 2.5rem;
+  box-shadow: var(--shadow-md);
+}
+
+.hero-title {
+  font-size: 2.25rem;
+  font-weight: 800;
+  line-height: 1.25;
+  color: #1b5e20;
+  margin-bottom: 1.25rem;
+  border-bottom: none;
+}
+
+.hero-content p {
+  font-size: 1.15rem;
+  line-height: 1.7;
+  color: #374151;
+}
+
+@media (max-width: 640px) {
+  .hero-section {
+    padding: 1.75rem 1.25rem;
+  }
+
+  .hero-title {
+    font-size: 1.65rem;
+  }
+
+  .hero-content p {
+    font-size: 1.05rem;
+  }
 }
 
 /* --- Responsive Table (Section: Resources) --- */

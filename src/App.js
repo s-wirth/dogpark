@@ -28,7 +28,7 @@ function App() {
           </button>
         </nav>
         
-        <div className="content" style={{ marginTop: '5rem', padding: '2rem' }}>
+        <div className="content">
           <ContentMD language={language} onSectionsLoaded={setNavLinks} />
         </div>
     </div>

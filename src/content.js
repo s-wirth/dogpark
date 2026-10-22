@@ -6,6 +6,7 @@ export const siteContent = {
   sections: [
     {
       id: `intro`,
+      type: `hero`,
       navTitle: {
         en: `Intro`,
         ger: `Intro`
