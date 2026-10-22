@@ -16,9 +16,6 @@ function App() {
   return (
     <div className="App">
         <nav >
-          <button onClick={changeLanguage}>
-            {language === 'en' ? siteContent.nav.ger : siteContent.nav.en}
-          </button>
           <ul style={{ display: 'flex', gap: '1rem', listStyle: 'none', padding: 0 }}>
             {navLinks.map(link => (
               <li key={link.id}>
@@ -26,6 +23,9 @@ function App() {
               </li>
             ))}
           </ul>
+          <button onClick={changeLanguage}>
+            {language === 'en' ? siteContent.nav.ger : siteContent.nav.en}
+          </button>
         </nav>
         
         <div className="content" style={{ marginTop: '5rem', padding: '2rem' }}>

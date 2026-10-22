@@ -6,6 +6,10 @@ export const siteContent = {
   sections: [
     {
       id: `intro`,
+      navTitle: {
+        en: `Intro`,
+        ger: `Intro`
+      },
       title: {
         en: `Project: Revitalizing the Anton-Saefkow Dog Park`,
         ger: `Projekt: Revitalisierung der Hundewiese im Anton-Saefkow-Park`
@@ -16,17 +20,13 @@ The city is facing budget restraints and can't give our dog park the love it des
         ger: `Es ist schön hier... aber es könnte schöner sein. Willst du helfen?
 Die Stadt hat mit Budgeteinschränkungen zu kämpfen und kann unserer Hundewiese nicht die Aufmerksamkeit schenken, die sie verdient. Wir sind sowieso jeden Tag hier – warum nehmen wir die Verbesserung also nicht selbst in die Hand?`
       },
-      media: {
-        type: `image`, // or 'video'
-        src: `/images/img_1.jpeg`,
-        alt: {
-          en: `Anton-Saefkow Dog Park overview`,
-          ger: `Übersicht der Hundewiese Anton-Saefkow`
-        }
-      }
     },
     {
       id: `situation`,
+      navTitle: {
+        en: `Situation`,
+        ger: `Ausgangslage`
+      },
       title: {
         en: `The Situation`,
         ger: `Die Ausgangslage`
@@ -41,7 +41,40 @@ Unser Ziel ist es nicht, die Fläche zu verändern, sondern sie besser zu nutzen
       }
     },
     {
+      id: `photos`,
+      navTitle: {
+        en: `Photos`,
+        ger: `Fotos`
+      },
+      title: {
+        en: `Photos`,
+        ger: `Fotos`
+      },
+      content: {
+        en: `Click on any image to view in full size.`,
+        ger: `Klicke auf ein Bild, um es in voller Größe anzuzeigen.`
+      },
+      media: [
+        { src: `/images/img_1.jpeg`, alt: { en: `Dog park photo 1`, ger: `Hundewiese Foto 1` } },
+        { src: `/images/img_2.jpeg`, alt: { en: `Dog park photo 2`, ger: `Hundewiese Foto 2` } },
+        { src: `/images/img_3.jpeg`, alt: { en: `Dog park photo 3`, ger: `Hundewiese Foto 3` } },
+        { src: `/images/img_4.jpeg`, alt: { en: `Dog park photo 4`, ger: `Hundewiese Foto 4` } },
+        { src: `/images/img_5.jpeg`, alt: { en: `Dog park photo 5`, ger: `Hundewiese Foto 5` } },
+        { src: `/images/img_6.jpeg`, alt: { en: `Dog park photo 6`, ger: `Hundewiese Foto 6` } },
+        { src: `/images/img_7.jpeg`, alt: { en: `Dog park photo 7`, ger: `Hundewiese Foto 7` } },
+        { src: `/images/img_8.jpeg`, alt: { en: `Dog park photo 8`, ger: `Hundewiese Foto 8` } },
+        { src: `/images/img_9.jpeg`, alt: { en: `Dog park photo 9`, ger: `Hundewiese Foto 9` } },
+        { src: `/images/img_10.jpeg`, alt: { en: `Dog park photo 10`, ger: `Hundewiese Foto 10` } },
+        { src: `/images/img_11.jpeg`, alt: { en: `Dog park photo 11`, ger: `Hundewiese Foto 11` } },
+        { src: `/images/img_12.jpeg`, alt: { en: `Dog park photo 12`, ger: `Hundewiese Foto 12` } }
+      ]
+    },
+    {
       id: `challenges`,
+      navTitle: {
+        en: `Challenges`,
+        ger: `Herausforderungen`
+      },
       title: {
         en: `Challenges and Our Solutions`,
         ger: `Herausforderungen und Unsere Lösungen`
@@ -50,47 +83,52 @@ Unser Ziel ist es nicht, die Fläche zu verändern, sondern sie besser zu nutzen
         en: `1. Environment and Soil
 - The Problem: The park sits on a slope. Gravity, erosion, and time mean that topsoil constantly slides down the hill. Furthermore, this is a Schuttberg (a debris hill built from wartime rubble), meaning the ground is packed with sand, dust, bricks, and old shards of glass and pottery.
 - The Solution: 
-  - Fortify the Slope: Embed support poles at the top and bottom, strategically place heavy boulders, and plant hardy, deep-rooted shrubbery to naturally anchor the soil.
-  - Clean and Upgrade: Over several days, we will turn over, decontaminate, and sift the soil to remove glass and debris. Combining this with a thick layer of fresh mulch and new root systems will create cleaner, less dusty ground.
+- Fortify the Slope: Embed support poles at the top and bottom, strategically place heavy boulders, and plant hardy, deep-rooted shrubbery to naturally anchor the soil.
+- Clean and Upgrade: Over several days, we will turn over, decontaminate, and sift the soil to remove glass and debris. Combining this with a thick layer of fresh mulch and new root systems will create cleaner, less dusty ground.
 
 2. Layout and Separation
 - The Problem: There is currently no separation within the large area. It's hard to see who is in the park, creating anxiety for owners of small, very large, or nervous dogs.
 - The Solution: Create natural, open boundaries using landscaping, vegetation, and new elements to suggest distinct zones:
-  - Dedicated zones for small dogs and big dogs to reduce stress during busy hours.
-  - Designated digging zones to protect the main topsoil.
-  - Specialized areas for sniffing and seating. 
-  - Note: The park remains connected as a whole; these are intuitive, fence-free zones.
+- Dedicated zones for small dogs and big dogs to reduce stress during busy hours.
+- Designated digging zones to protect the main topsoil.
+- Specialized areas for sniffing and seating. 
+- Note: The park remains connected as a whole; these are intuitive, fence-free zones.
 
 3. Shade, Vegetation and Water
 - The Problem: Sun is constant, shade is limited, and only weeds or nettles survive. Even worse, there is absolutely no access to water, which is dangerous in the summertime.
 - The Solution:
-  - Shade: Build a main seating area at the top of the hill underneath the park's only large tree to utilize its natural canopy. The benches closer to the entrances will remain.
-  - Vegetation: Replace weeds and nettles with hardy, permanent, dog-friendly plants used for slope fortification.
-  - Water: Use the slope to our advantage. We can dig basins at the top to retain cooling puddles and install a simple overground cistern or rain-catchment system for dog-potable water.`,
+- Shade: Build a main seating area at the top of the hill underneath the park's only large tree to utilize its natural canopy. The benches closer to the entrances will remain.
+- Vegetation: Replace weeds and nettles with hardy, permanent, dog-friendly plants used for slope fortification.
+- Water: Use the slope to our advantage. We can dig basins at the top to retain cooling puddles and install a simple overground cistern or rain-catchment system for dog-potable water.`
+,
         ger: `1. Umgebung und Boden
 - Das Problem: Die Hundewiese liegt an einem Hang. Schwerkraft, Erosion und die Zeit führen dazu, dass der Mutterboden ständig den Hügel hinabrutscht. Zudem handelt es sich hierbei um einen Schuttberg, was bedeutet, dass der Boden von oben bis unten aus Sand, Staub, Ziegeln und alten Glas- sowie Keramikscherben besteht.
 - Die Lösung: 
-  - Hang sichern: Wir können Pfähle am oberen und unteren Ende des Hangs einschlagen, strategisch schwere Felsbrocken platzieren und tiefwurzelnde, robuste Sträucher pflanzen, um den Boden auf natürliche Weise zu stabilisieren.
-  - Boden reinigen und aufwerten: Über mehrere Tage hinweg wollen wir den Boden umgraben, dekontaminieren und sieben, um Glas und Trümmerteile zu entfernen. In Kombination mit der Hangsicherung, einer neuen, dicken Schicht Rindenmulch und tiefen Wurzeln schaffen wir so einen sauberen, weniger staubigen Untergrund.
+- Hang sichern: Wir können Pfähle am oberen und unteren Ende des Hangs einschlagen, strategisch schwere Felsbrocken platzieren und tiefwurzelnde, robuste Sträucher pflanzen, um den Boden auf natürliche Weise zu stabilisieren.
+- Boden reinigen und aufwerten: Über mehrere Tage hinweg wollen wir den Boden umgraben, dekontaminieren und sieben, um Glas und Trümmerteile zu entfernen. In Kombination mit der Hangsicherung, einer neuen, dicken Schicht Rindenmulch und tiefen Wurzeln schaffen wir so einen sauberen, weniger staubigen Untergrund.
 
 2. Aufteilung und Struktur
 - Das Problem: Derzeit gibt es keine Unterteilung innerhalb der großen Fläche. Es ist schwer zu erkennen, wer sich gerade im Park aufhält, was besonders für Besitzer von kleinen, sehr großen oder ängstlichen Hunden zu Stress führt.
 - Die Lösung: Wir schaffen natürliche, offene Grenzen durch die Landschaftsgestaltung, Bepflanzung und neue Elemente, um verschiedene Zonen anzudeuten:
-  - Eigene Bereiche für kleine Hunde und große Hunde, um den Stress zu Stoßzeiten zu minimieren.
-  - Ausgewiesene Buddelzonen, um den guten Mutterboden im Rest des Parks zu schonen.
-  - Speziell gestaltete Bereiche zum Schnüffeln und zum Sitzen. 
-  - Hinweis: Der Park bleibt als Ganzes miteinander verbunden; es handelt sich um intuitive Bereiche ohne trennende Zäune.
+- Eigene Bereiche für kleine Hunde und große Hunde, um den Stress zu Stoßzeiten zu minimieren.
+- Ausgewiesene Buddelzonen, um den guten Mutterboden im Rest des Parks zu schonen.
+- Speziell gestaltete Bereiche zum Schnüffeln und zum Sitzen. 
+- Hinweis: Der Park bleibt als Ganzes miteinander verbunden; es handelt sich um intuitive Bereiche ohne trennende Zäune.
 
 3. Schatten, Bepflanzung und Wasser
 - Das Problem: Die Sonne brennt ununterbrochen, Schatten ist Mangelware, und außer Unkraut oder Brennnesseln überlebt kaum eine Pflanze. Noch schlimmer ist, dass es keinen Wasserzugang gibt, was besonders im Sommer gefährlich ist.
 - Die Lösung:
-  - Schatten: Wir errichten den Hauptsitzbereich oben auf dem Hügel unter dem einzigen großen Baum der Hundewiese, um dessen natürliches Blätterdach zu nutzen. Die Bänke in der Nähe der Eingänge bleiben bestehen.
-  - Bepflanzung: Unkraut und Brennnesseln werden verdrängt, indem wir an ihrer Stelle die robusten, dauerhaften und hundefreundlichen Pflanzen einsetzen, die auch zur Hangsicherung dienen.
-  - Wasser: Wir nutzen das Gefälle zu unserem Vorteil. Oben auf dem Hügel können wir Mulden ausheben, die Regenwasser auffangen und als abkühlende Pfützen dienen. Zudem installieren wir ein einfaches, oberirdisches Zisternen- oder Regenauffangsystem für trinkbares Wasser.`
+- Schatten: Wir errichten den Hauptsitzbereich oben auf dem Hügel unter dem einzigen großen Baum der Hundewiese, um dessen natürliches Blätterdach zu nutzen. Die Bänke in der Nähe der Eingänge bleiben bestehen.
+- Bepflanzung: Unkraut und Brennnesseln werden verdrängt, indem wir an ihrer Stelle die robusten, dauerhaften und hundefreundlichen Pflanzen einsetzen, die auch zur Hangsicherung dienen.
+- Wasser: Wir nutzen das Gefälle zu unserem Vorteil. Oben auf dem Hügel können wir Mulden ausheben, die Regenwasser auffangen und als abkühlende Pfützen dienen. Zudem installieren wir ein einfaches, oberirdisches Zisternen- oder Regenauffangsystem für trinkbares Wasser.`
       }
     },
     {
       id: `phases`,
+      navTitle: {
+        en: `Phases`,
+        ger: `Phasen`
+      },
       title: {
         en: `Next Steps and Project Phases`,
         ger: `Nächste Schritte und Projektphasen`
@@ -106,7 +144,8 @@ Phase 1: Community and Input (Current Phase)
 
 Phase 2: Logistics and Resource Mapping
 - Finalizing the structural layout based on community feedback.
-- Assigning roles and mapping out our available resources.`,
+- Assigning roles and mapping out our available resources.`
+,
         ger: `Ich bin nur ein sehr engagierter Nachbar. Ich plane und organisiere gerne, aber ich kann eine Hundewiese allein nicht renovieren. Dies ist ein echtes Gemeinschaftsprojekt.
 
 Phase 1: Du bist hier! -> Phase 2: Bedingungen und Logistik -> Phase 3: Umsetzung
@@ -122,6 +161,10 @@ Phase 2: Logistik und Ressourcenplanung
     },
     {
       id: `resources`,
+      navTitle: {
+        en: `Resources`,
+        ger: `Ressourcen`
+      },
       title: {
         en: `What We Need (Our Resources)`,
         ger: `Was wir brauchen (Unsere Ressourcen)`
@@ -147,6 +190,10 @@ Geld | Hauptsächlich für die Miete von Werkzeugen und den Druck von Flyern. Wi
     },
     {
       id: `join`,
+      navTitle: {
+        en: `Join Us`,
+        ger: `Mitmachen`
+      },
       title: {
         en: `Ready to Make It Nicer?`,
         ger: `Bereit, die Wiese schöner zu machen?`
