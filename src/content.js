@@ -55,20 +55,23 @@ Unser Ziel ist es nicht, die Fläche zu verändern, sondern sie besser zu nutzen
         en: `Click on any image to view in full size.`,
         ger: `Klicke auf ein Bild, um es in voller Größe anzuzeigen.`
       },
-      media: [
-        { src: `/images/img_1.jpeg`, alt: { en: `Dog park photo 1`, ger: `Hundewiese Foto 1` } },
-        { src: `/images/img_2.jpeg`, alt: { en: `Dog park photo 2`, ger: `Hundewiese Foto 2` } },
-        { src: `/images/img_3.jpeg`, alt: { en: `Dog park photo 3`, ger: `Hundewiese Foto 3` } },
-        { src: `/images/img_4.jpeg`, alt: { en: `Dog park photo 4`, ger: `Hundewiese Foto 4` } },
-        { src: `/images/img_5.jpeg`, alt: { en: `Dog park photo 5`, ger: `Hundewiese Foto 5` } },
-        { src: `/images/img_6.jpeg`, alt: { en: `Dog park photo 6`, ger: `Hundewiese Foto 6` } },
-        { src: `/images/img_7.jpeg`, alt: { en: `Dog park photo 7`, ger: `Hundewiese Foto 7` } },
-        { src: `/images/img_8.jpeg`, alt: { en: `Dog park photo 8`, ger: `Hundewiese Foto 8` } },
-        { src: `/images/img_9.jpeg`, alt: { en: `Dog park photo 9`, ger: `Hundewiese Foto 9` } },
-        { src: `/images/img_10.jpeg`, alt: { en: `Dog park photo 10`, ger: `Hundewiese Foto 10` } },
-        { src: `/images/img_11.jpeg`, alt: { en: `Dog park photo 11`, ger: `Hundewiese Foto 11` } },
-        { src: `/images/img_12.jpeg`, alt: { en: `Dog park photo 12`, ger: `Hundewiese Foto 12` } }
-      ]
+      media: {
+        type: `gallery`,
+        items: [
+          { src: `/images/img_1.jpeg`, alt: { en: `Dog park photo 1`, ger: `Hundewiese Foto 1` } },
+          { src: `/images/img_2.jpeg`, alt: { en: `Dog park photo 2`, ger: `Hundewiese Foto 2` } },
+          { src: `/images/img_3.jpeg`, alt: { en: `Dog park photo 3`, ger: `Hundewiese Foto 3` } },
+          { src: `/images/img_4.jpeg`, alt: { en: `Dog park photo 4`, ger: `Hundewiese Foto 4` } },
+          { src: `/images/img_5.jpeg`, alt: { en: `Dog park photo 5`, ger: `Hundewiese Foto 5` } },
+          { src: `/images/img_6.jpeg`, alt: { en: `Dog park photo 6`, ger: `Hundewiese Foto 6` } },
+          { src: `/images/img_7.jpeg`, alt: { en: `Dog park photo 7`, ger: `Hundewiese Foto 7` } },
+          { src: `/images/img_8.jpeg`, alt: { en: `Dog park photo 8`, ger: `Hundewiese Foto 8` } },
+          { src: `/images/img_9.jpeg`, alt: { en: `Dog park photo 9`, ger: `Hundewiese Foto 9` } },
+          { src: `/images/img_10.jpeg`, alt: { en: `Dog park photo 10`, ger: `Hundewiese Foto 10` } },
+          { src: `/images/img_11.jpeg`, alt: { en: `Dog park photo 11`, ger: `Hundewiese Foto 11` } },
+          { src: `/images/img_12.jpeg`, alt: { en: `Dog park photo 12`, ger: `Hundewiese Foto 12` } }
+        ]
+      }
     },
     {
       id: `challenges`,
@@ -135,12 +138,17 @@ Unser Ziel ist es nicht, die Fläche zu verändern, sondern sie besser zu nutzen
         ger: `Park Grundriss`
       },
       content: {
-        en: `engl`,
-        ger: `germ`
+        en: `An overview of the proposed zones. Click the map to enlarge.`,
+        ger: `Eine Übersicht der vorgeschlagenen Zonen. Klicke auf die Karte zum Vergrößern.`
       },
-      media: [
-        { src: `/images/asdp.png`, alt: { en: `Park Layout split into zones.`, ger: `Park Grundriss in Zonen unterteilt.` } }
-      ]
+      media: {
+        type: `section-image`,
+        src: `/images/asdp.png`,
+        alt: {
+          en: `Park Layout split into zones.`,
+          ger: `Park Grundriss in Zonen unterteilt.`
+        }
+      }
     },
     {
       id: `phases`,

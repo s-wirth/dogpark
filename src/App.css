@@ -208,6 +208,44 @@ section a:hover {
   }
 }
 
+/* --- Media Styling --- */
+.media-container {
+  margin-top: 1.5rem;
+}
+
+/* Full-width standalone section image */
+.section-image-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.section-image {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  border-radius: var(--radius);
+  border: 1px solid var(--border-color);
+  box-shadow: var(--shadow-sm);
+  display: block;
+  cursor: zoom-in;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.section-image:hover {
+  transform: scale(1.01);
+  box-shadow: var(--shadow-md);
+}
+
+/* Video wrapper */
+.video-wrapper video {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: var(--radius);
+}
+
 /* --- Responsive Table (Section: Resources) --- */
 table {
   width: 100%;

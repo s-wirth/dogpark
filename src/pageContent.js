@@ -25,6 +25,7 @@ export const ContentMD = ({ language, onSectionsLoaded }) => {
     <div className="content-container">
       {siteContent.sections.map(section => {
         const isHero = section.type === 'hero';
+        const media = section.media;
 
         return (
           <section
@@ -44,41 +45,50 @@ export const ContentMD = ({ language, onSectionsLoaded }) => {
               </div>
             )}
 
-            {/* Photo Grid */}
-            {Array.isArray(section.media) && (
-              <div className="photo-grid">
-                {section.media.map((item, idx) => (
-                  <button
-                    type="button"
-                    key={idx}
-                    className="photo-thumb-btn"
-                    onClick={() => setActiveModalImg(item)}
-                  >
+            {/* Media Rendering */}
+            {media && (
+              <div className="media-container">
+                {/* 1. Gallery Grid */}
+                {media.type === 'gallery' && (
+                  <div className="photo-grid">
+                    {media.items.map((item, idx) => (
+                      <button
+                        type="button"
+                        key={idx}
+                        className="photo-thumb-btn"
+                        onClick={() => setActiveModalImg(item)}
+                      >
+                        <img
+                          src={item.src}
+                          alt={item.alt[language]}
+                          loading="lazy"
+                        />
+                      </button>
+                    ))}
+                  </div>
+                )}
+
+                {/* 2. Standalone Full-Width Section Image */}
+                {media.type === 'section-image' && (
+                  <div className="section-image-wrapper">
                     <img
-                      src={item.src}
-                      alt={item.alt[language]}
+                      src={media.src}
+                      alt={media.alt[language]}
+                      className="section-image"
+                      onClick={() => setActiveModalImg(media)}
                       loading="lazy"
                     />
-                  </button>
-                ))}
-              </div>
-            )}
-
-            {/* Standalone Media */}
-            {section.media && !Array.isArray(section.media) && (
-              <div className="media-wrapper">
-                {section.media.type === 'image' && (
-                  <img
-                    src={section.media.src}
-                    alt={section.media.alt[language]}
-                    onClick={() => setActiveModalImg(section.media)}
-                  />
+                  </div>
                 )}
-                {section.media.type === 'video' && (
-                  <video controls width="100%">
-                    <source src={section.media.src} type="video/mp4" />
-                    Your browser does not support the video tag.
-                  </video>
+
+                {/* 3. Video */}
+                {media.type === 'video' && (
+                  <div className="video-wrapper">
+                    <video controls width="100%">
+                      <source src={media.src} type="video/mp4" />
+                      Your browser does not support the video tag.
+                    </video>
+                  </div>
                 )}
               </div>
             )}
@@ -86,7 +96,7 @@ export const ContentMD = ({ language, onSectionsLoaded }) => {
         );
       })}
 
-      {/* Modal */}
+      {/* Lightbox Modal */}
       {activeModalImg && (
         <div className="modal-backdrop" onClick={() => setActiveModalImg(null)}>
           <div className="modal-content" onClick={(e) => e.stopPropagation()}>
