@@ -125,6 +125,24 @@ Unser Ziel ist es nicht, die Fläche zu verändern, sondern sie besser zu nutzen
       }
     },
     {
+      id: `layout`,
+      navTitle: {
+        en: `Layout`,
+        ger: `Grundriss`
+      },
+      title: {
+        en: `Park Layout`,
+        ger: `Park Grundriss`
+      },
+      content: {
+        en: `engl`,
+        ger: `germ`
+      },
+      media: [
+        { src: `/images/asdp.png`, alt: { en: `Park Layout split into zones.`, ger: `Park Grundriss in Zonen unterteilt.` } }
+      ]
+    },
+    {
       id: `phases`,
       navTitle: {
         en: `Phases`,
