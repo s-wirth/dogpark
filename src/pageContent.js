@@ -41,7 +41,15 @@ export const ContentMD = ({ language, onSectionsLoaded }) => {
 
             {section.content && section.content[language] && (
               <div className={isHero ? 'hero-content' : ''}>
-                <Markdown>{section.content[language]}</Markdown>
+                <Markdown
+                  components={{
+                    a: ({ node, ...props }) => (
+                      <a {...props} target="_blank" rel="noopener noreferrer" />
+                    )
+                  }}
+                >
+                  {section.content[language]}
+                </Markdown>
               </div>
             )}
 

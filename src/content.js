@@ -228,12 +228,12 @@ Geld | Hauptsächlich für die Miete von Werkzeugen und den Druck von Flyern. Wi
       content: {
         en: `If you want to see a safer, greener, and cooler park for our dogs, please join us!
 
-CLICK HERE TO SIGN UP VIA OUR GOOGLE FORM (Insert your link here)
+[Click here to sign up via our Google Form](https://docs.google.com/forms/d/e/1FAIpQLSdjhCoFuLIB1zQvZ4K-DpNqoLqP9HgPru4uoIYH5pnACCcZWw/viewform?usp=sf_link)
 
 Or scan the QR code on the physical flyers in the park!`,
         ger: `Wenn du dir eine sicherere, grünere und coolere Hundewiese für unsere Vierbeiner wünschst, mach mit!
 
-HIER KLICKEN, UM DICH ÜBER UNSER GOOGLE-FORMULAR ANZUMELDEN (Link hier einfügen)
+[HIER KLICKEN, UM DICH ÜBER UNSER GOOGLE-FORMULAR ANZUMELDEN](https://docs.google.com/forms/d/e/1FAIpQLSdjhCoFuLIB1zQvZ4K-DpNqoLqP9HgPru4uoIYH5pnACCcZWw/viewform?usp=sf_link)
 
 Oder scanne einfach den QR-Code auf den Handzetteln direkt an der Hundewiese!`
       }
