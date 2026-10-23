@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/dogpark/static/css/main.dc88481c.css",
+    "main.js": "/dogpark/static/js/main.bb75e406.js",
+    "static/js/453.8c3ea4aa.chunk.js": "/dogpark/static/js/453.8c3ea4aa.chunk.js",
+    "index.html": "/dogpark/index.html",
+    "main.dc88481c.css.map": "/dogpark/static/css/main.dc88481c.css.map",
+    "main.bb75e406.js.map": "/dogpark/static/js/main.bb75e406.js.map",
+    "453.8c3ea4aa.chunk.js.map": "/dogpark/static/js/453.8c3ea4aa.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.dc88481c.css",
+    "static/js/main.bb75e406.js"
+  ]
+}
